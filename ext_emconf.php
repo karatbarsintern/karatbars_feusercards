@@ -1,15 +1,15 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'FE_User Cards',
-    'description' => 'An extension to display fe_user as cards.',
+    'title' => 'Karatbars FE_User Cards',
+    'description' => 'Fork of HamburgerJungeJr/fe_user_cards 1.3.0 to display fe_user as cards but including composer support.',
     'category' => 'plugin',
-    'author' => 'HamburgerJungeJr',
+    'author' => 'Oliver Kurzer',
     'author_company' => '',
-    'author_email' => '',
+    'author_email' => 'oliver.kurzer@karatbars.com',
     'state' => 'beta',
     'clearCacheOnLoad' => true,
-    'version' => '1.3.0',
+    'version' => '1.0.0',
     'constraints' => [
         'depends' => [
             'typo3' => '8.0.0-9.9.99',
@@ -19,7 +19,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'HamburgerJungeJr\\FeUserCards\\' => 'Classes'
+            'Karatbars\\KaratbarsFeusercards\\' => 'Classes'
         ]
     ],
 ];
