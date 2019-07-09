@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
+          product-name="karatbars_feusercards">
+        <header/>
+        <body>
+            <trans-unit id="email">
+                <source>EMail:</source>
+                <target>E-Mail:</target>
+            </trans-unit>
+            <trans-unit id="phone">
+                <source>Phone:</source>
+                <target>Telefon:</target>
+            </trans-unit>
+            <trans-unit id="mobile">
+                <source>Mobile:</source>
+                <target>Mobil:</target>
+            </trans-unit>
+            <trans-unit id="address">
+                <source>Address:</source>
+                <target>Adresse:</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

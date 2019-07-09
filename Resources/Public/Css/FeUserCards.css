@@ -1,0 +1,48 @@
+.karatbars_feusercards .user {
+  width: 450px;
+  border: 1px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.karatbars_feusercards .user div {
+  float: none;
+}
+
+.karatbars_feusercards .user .name {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.karatbars_feusercards .user .contactposition {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.karatbars_feusercards .user .photo {
+  float: none;
+  margin: 10px 0px 50px 0px !important;
+  text-align: center;
+}
+
+.karatbars_feusercards .user .email,
+.karatbars_feusercards .user .contact,
+.karatbars_feusercards .user .address,
+.karatbars_feusercards .user .info {
+  border: none;
+  margin: 10px;
+  padding: 0px;
+}
+
+.karatbars_feusercards .user .contactlabel {
+  float: left;
+  width: 75px;
+}
+
+.karatbars_feusercards .user .contactdata {
+  margin-left: 75px;
+}

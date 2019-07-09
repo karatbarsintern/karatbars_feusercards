@@ -1,0 +1,46 @@
+<div class="user">
+    <h1 class="name">{user.firstName}<f:if condition="{user.middleName}">&nbsp;{user.middleName}</f:if>&nbsp;{user.lastName}</h1>
+    <h6 class="contactposition">{user.feUserCardsPosition}</h6>
+    <f:if condition="!{settings.hideImage}">
+        <div class="photo">
+            <f:if condition="{user.image.0}">
+                <f:then>
+                    <f:image image="{user.image.0}"  width="180" height="286" alt="{user.firstName}{f:if(condition:'{user.middleName}',then:' {user.middleName}')} {user.lastName}"/>
+                </f:then>
+                <f:else>
+                    <f:image src="{f:uri.resource(path: 'Media/dummy.png')}"  width="180" height="286" alt="{user.firstName}{f:if(condition:'{user.middleName}',then:' {user.middleName}')} {user.lastName}"/>
+                </f:else>
+            </f:if>
+            
+        </div>
+    </f:if>
+    <f:if condition="{user.email}">
+        <div class="email">
+            <div class="contactlabel">{f:translate(key:'email')}</div>
+            <div class="email contactdata">
+                <f:link.email email="{user.email}" />
+            </div>
+        </div>
+    </f:if>
+    <div class="contact">
+        <f:if condition="{user.telephone}">
+            <div class="contactlabel">{f:translate(key:'phone')}</div>
+            <div class="phone contactdata">
+                <a href="phone:{user.telephone}">{user.telephone}</a>
+            </div>
+        </f:if>
+        <f:if condition="{user.feUserCardsMobile}">
+            <div class="contactlabel">{f:translate(key:'mobile')}</div>
+            <div class="mobile contactdata">
+                <a href="phone:{user.feUserCardsMobile}">{user.feUserCardsMobile}</a>
+            </div>
+        </f:if>
+    </div>
+    <div class="address">
+        <f:if condition="{user.address}">
+            <div class="contactlabel">{f:translate(key:'address')}</div>
+            <div class="street-address contactdata">{user.address}</div>
+            <div class="zip-locality contactdata">{user.zip} {user.city}</div>
+        </f:if>
+    </div>
+</div>

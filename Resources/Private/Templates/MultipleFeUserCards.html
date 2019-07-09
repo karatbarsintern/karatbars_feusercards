@@ -1,0 +1,14 @@
+<f:layout name="default" />
+
+<f:section name="HeaderAssets">
+   <v:asset.style path="{settings.cssFile}" />
+   <v:asset.style path="{settings.multipleCssFile}" />
+</f:section>
+
+<f:section name="main">
+    <div class="multiple">
+        <f:for each="{feuser}" as="user">
+            <f:render partial="UserCard" arguments="{user: user}" />
+        </f:for>
+    </div>
+</f:section>

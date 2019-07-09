@@ -1,0 +1,40 @@
+<T3DataStructure>
+	<sheets>
+		<!--
+			################################
+			  SHEET General Settings
+			################################
+		-->
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!-- user -->
+					<settings.user>
+						<TCEforms>
+							<label>LLL:EXT:karatbars_feusercards/Resources/Private/Language/locallang_be.xlf:karatbars_feusercards.user</label>
+							<config>
+								<type>select</type>
+                                <foreign_table>fe_users</foreign_table>
+                                <foreign_table_where>
+                                    AND fe_users.pid = (SELECT pages FROM tt_content WHERE uid=###THIS_UID###)
+                                </foreign_table_where>
+							</config>
+						</TCEforms>
+					</settings.user>
+					<settings.hideImage>
+						<TCEforms>
+							<label>LLL:EXT:karatbars_feusercards/Resources/Private/Language/locallang_be.xlf:karatbars_feusercards.hide_image</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.hideImage>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

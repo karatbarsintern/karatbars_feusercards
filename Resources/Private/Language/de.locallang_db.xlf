@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file target-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
+          product-name="karatbars_feusercards">
+        <header/>
+        <body>
+            <trans-unit id="fe_users.karatbars_feusercards_position">
+                <source>Position</source>
+                <target>Amt</target>
+            </trans-unit>
+            <trans-unit id="fe_users.karatbars_feusercards_mobile">
+                <source>Mobile</source>
+                <target>Mobil</target>
+            </trans-unit>
+            <trans-unit id="fe_users.karatbars_feusercards_sorting">
+                <source>Sorting</source>
+                <target>Sortierung</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

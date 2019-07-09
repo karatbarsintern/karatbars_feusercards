@@ -1,0 +1,12 @@
+<f:layout name="default" />
+
+<f:section name="HeaderAssets">
+   <v:asset.style path="{settings.cssFile}" />
+   <v:asset.style path="{settings.singleCssFile}" />
+</f:section>
+
+<f:section name="main">
+    <div class="single">
+        <f:render partial="UserCard" arguments="{user: feuser}" />
+    </div>
+</f:section>
