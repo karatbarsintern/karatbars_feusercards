@@ -1,0 +1,17 @@
+config.tx_extbase {
+    persistence {
+        classes {
+            Karatbars\KaratbarsFeusercards\Domain\Model\ExtendedFrontendUser {
+                mapping {
+                    tableName = fe_users
+                    columns {
+                        tx_karatbars_feusercards_position.mapOnProperty = feUserCardsPosition
+                        tx_karatbars_feusercards_mobile.mapOnProperty = feUserCardsMobile
+                        tx_karatbars_feusercards_sorting.mapOnProperty = feUserCardsSorting
+                    }
+                }
+            }
+        }
+    }
+}
+

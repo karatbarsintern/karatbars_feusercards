@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
+          product-name="karatbars_feusercards">
+        <header/>
+        <body>
+            <trans-unit id="karatbars_feusercards.user">
+                <source>User</source>
+            </trans-unit>
+            <trans-unit id="karatbars_feusercards.user_groups">
+                <source>Usergroups</source>
+            </trans-unit>
+            <trans-unit id="karatbars_feusercards.hide_image">
+                <source>Hide image</source>
+            </trans-unit>
+            <trans-unit id="karatbars_feusercards.single_karatbars_feusercard_title">
+                <source>Single fe_user card</source>
+            </trans-unit>
+            <trans-unit id="karatbars_feusercards.multiple_karatbars_feusercards_title">
+                <source>Multiple fe_user cards</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

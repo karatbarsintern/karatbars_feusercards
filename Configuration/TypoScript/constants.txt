@@ -1,0 +1,11 @@
+# customcategory=karatbarsFeUserCards=Karatbars Fe_User Cards
+plugin.tx_karatbars_feusercards{
+    settings{
+        # cat=karatbarsFeUserCards; type=; label=Basic Css Configuration
+        cssFile = EXT:karatbars_feusercards/Resources/Public/Css/KaratbarsFeUserCards.css
+        # cat=karatbarsFeUserCards; type=; label=Css Configuration for single fe_user card
+        singleCssFile = EXT:karatbars_feusercards/Resources/Public/Css/Single.css
+        # cat=karatbarsFeUserCards; type=; label=Css Configuration for multiple fe_user cards
+        multipleCssFile = EXT:karatbars_feusercards/Resources/Public/Css/Multiple.css
+    }
+}
