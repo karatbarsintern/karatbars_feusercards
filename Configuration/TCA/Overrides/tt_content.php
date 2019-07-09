@@ -17,7 +17,7 @@
     );
 
     $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignatureSingle]='pi_flexform';
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignatureSingle, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform_single_fe_user_card.xml');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignatureSingle, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform_single_karatbars_feusercard.xml');
 
     // Register Multiple plugin
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
