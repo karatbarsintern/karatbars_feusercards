@@ -28,7 +28,7 @@
   },
   "autoload": {
     "psr-4": {
-      "HamburgerJungeJr\\FeUserCards\\": "Classes/"
+      "Karatbars\\KaratbarsFeusercards\\": "Classes/"
     }
   },
   "config": {
