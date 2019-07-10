@@ -4,7 +4,7 @@
     use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
     //use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserRepository;
     use Karatbars\KaratbarsFeusercards\Domain\Repository\ExtendedFrontendUserRepository;
-	class KaratbarsFeusercardsController extends ActionController
+	class FeusercardsController extends ActionController
 	{
         /**
          * @var Karatbars\KaratbarsFeusercards\Domain\Repository\ExtendedFrontendUserRepository
