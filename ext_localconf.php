@@ -2,14 +2,14 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['\\TYPO3\\CMS\\Core\\Utility\\CsvUtility'] = array(
-    'className' => 'HamburgerJungeJr\\FeUserCards\\Xclass\\Utility\\CsvUtility'
+    'className' => 'Karatbars\\KaratbarsFeusercards\\Xclass\\Utility\\CsvUtility'
 );
 
 
 call_user_func(
     function () {
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'HamburgerJungeJr.FeUserCards',
+            'Karatbars.KaratbarsFeusercards',
             'MultipleFeUserCards',
             [
                 'FeUserCards' => 'multipleFeUserCards',
@@ -20,7 +20,7 @@ call_user_func(
             ]
         );
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'HamburgerJungeJr.FeUserCards',
+            'Karatbars.KaratbarsFeusercards',
             'SingleFeUserCard',
             [
                 'FeUserCards' => 'singleFeUserCard',
