@@ -10,9 +10,9 @@ call_user_func(
     function () {
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
             'Karatbars.KaratbarsFeusercards',
-            'MultipleFeUserCards',
+            'SimpleFeUserCard',
             [
-                'FeUserCards' => 'multipleFeUserCards',
+                'FeUserCards' => 'simpleFeUserCard',
             ],
             // non-cacheable actions
             [
@@ -24,6 +24,17 @@ call_user_func(
             'SingleFeUserCard',
             [
                 'FeUserCards' => 'singleFeUserCard',
+            ],
+            // non-cacheable actions
+            [
+                'FeUsercards' => '',
+            ]
+        );
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'Karatbars.KaratbarsFeusercards',
+            'MultipleFeUserCards',
+            [
+                'FeUserCards' => 'multipleFeUserCards',
             ],
             // non-cacheable actions
             [

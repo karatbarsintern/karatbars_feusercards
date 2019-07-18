@@ -16,6 +16,10 @@
                 <source>Hide image</source>
                 <target>Bild verbergen</target>
             </trans-unit>
+            <trans-unit id="karatbars_feusercards.simple_karatbars_feusercards_title">
+                <source>Simple fe_user cards</source>
+                <target>Simple fe_user cards</target>
+            </trans-unit>
             <trans-unit id="karatbars_feusercards.single_karatbars_feusercard_title">
                 <source>Single fe_user card</source>
                 <target>Einzelne fe_user card</target>

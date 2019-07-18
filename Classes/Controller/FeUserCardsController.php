@@ -1,6 +1,9 @@
 <?php
     namespace Karatbars\KaratbarsFeusercards\Controller;
-    
+
+    use TYPO3\CMS\Fluid\View\TemplateView;
+    use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
+    use TYPO3\CMS\Core\Utility\GeneralUtility;
     use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
     //use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserRepository;
     use Karatbars\KaratbarsFeusercards\Domain\Repository\ExtendedFrontendUserRepository;
@@ -20,6 +23,40 @@
         public function injectFeUserRepository(ExtendedFrontendUserRepository $feUserRepository)
         {
             $this->feUserRepository = $feUserRepository;
+        }
+
+        /**
+         * @param ViewInterface $view
+         */
+        public function initializeView(ViewInterface $view)
+        {
+            if($view instanceof TemplateView) {
+                $configurationManager = GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Configuration\\ConfigurationManager');
+                $extbaseFrameworkConfiguration = $configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
+                $customViews = $extbaseFrameworkConfiguration['plugin.']['tx_karatbars_feusercards.']['view.'];
+
+                if( isset($customViews['templateRootPaths.']) ){
+                    $view->setTemplateRootPaths( $customViews['templateRootPaths.'] );
+                }
+
+                if( isset($customViews['layoutRootPaths.']) ){
+                    $view->setLayoutRootPaths( $customViews['layoutRootPaths.'] );
+                }
+
+                if( isset($customViews['partialRootPaths.']) ){
+                    $view->setPartialRootPaths( $customViews['partialRootPaths.'] );
+                }
+            }
+        }
+
+
+        /**
+         * Action for simple fe_user card.
+         *
+         * @return void
+         */
+        public function simpleFeUserCardAction() {
+            $this->view->assign('feuser', $this->feUserRepository->findByUid($this->settings['user']));
         }
 
         /**
