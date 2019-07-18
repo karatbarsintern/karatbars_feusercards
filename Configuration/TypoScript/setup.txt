@@ -1,7 +1,0 @@
-plugin.tx_feusercards{
-    settings{
-        cssFile = {$plugin.tx_feusercards.settings.cssFile}
-        singleCssFile = {$plugin.tx_feusercards.settings.singleCssFile}
-        multipleCssFile = {$plugin.tx_feusercards.settings.multipleCssFile}
-    }
-}

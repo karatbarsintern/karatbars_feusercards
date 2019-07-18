@@ -1,0 +1,7 @@
+page.includeCSS {
+	karatbarsFeUserCardsCssFile = {$plugin.tx_karatbars_feusercards.settings.cssFile}
+	karatbarsFeUserCardsCssFileSimple = {$plugin.tx_karatbars_feusercards.settings.simpleCssFile}
+	karatbarsFeUserCardsCssFileSingle = {$plugin.tx_karatbars_feusercards.settings.singleCssFile}
+	karatbarsFeUserCardsCssFileMultible = {$plugin.tx_karatbars_feusercards.settings.multipleCssFile}
+}
+

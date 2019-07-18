@@ -12,21 +12,19 @@
 				</TCEforms>
 				<type>array</type>
 				<el>
-					<!-- userGroup -->
-					<settings.userGroup>
+					<!-- user -->
+					<settings.user>
 						<TCEforms>
-							<label>LLL:EXT:karatbars_feusercards/Resources/Private/Language/locallang_be.xlf:karatbars_feusercards.user_groups</label>
+							<label>LLL:EXT:karatbars_feusercards/Resources/Private/Language/locallang_be.xlf:karatbars_feusercards.user</label>
 							<config>
 								<type>select</type>
-								<renderType>selectMultipleSideBySide</renderType>
-								<size>5</size>
-                                <foreign_table>fe_groups</foreign_table>
+                                <foreign_table>fe_users</foreign_table>
                                 <foreign_table_where>
-                                    AND fe_groups.pid = (SELECT pages FROM tt_content WHERE uid=###THIS_UID###)
+                                    AND fe_users.pid = (SELECT pages FROM tt_content WHERE uid=###THIS_UID###)
                                 </foreign_table_where>
 							</config>
 						</TCEforms>
-					</settings.userGroup>
+					</settings.user>
 					<settings.hideImage>
 						<TCEforms>
 							<label>LLL:EXT:karatbars_feusercards/Resources/Private/Language/locallang_be.xlf:karatbars_feusercards.hide_image</label>
@@ -35,14 +33,6 @@
 							</config>
 						</TCEforms>
 					</settings.hideImage>
-					<settings.simpleCards>
-						<TCEforms>
-							<label>Schimblä Cards</label>
-							<config>
-								<type>check</type>
-							</config>
-						</TCEforms>
-					</settings.simpleCards>
 				</el>
 			</ROOT>
 		</sDEF>
